@@ -43,7 +43,7 @@ Removal of outliers initally as observations from the above scatter plot (eg. 33
 
 ![refined_scatter](images/refined_scatter.png)
 
-![base_price_dist](images/base_price_density.png)
+![base_price_dist](images/base_price_dist.png)
 
 Performing a log function on the base model price distribution yielded:
 
@@ -52,20 +52,20 @@ Performing a log function on the base model price distribution yielded:
 
 Performing a correlation matrix to further analyse the correlation between the chosen variables allowed us to further eliminate those with very low correlation to the price objective.
 
-![correlation_matrix](images\correlation_matrix.png)
+![correlation_matrix](images/correlation_matrix.png)
 
 Which lead to the removal of:
 * sqft_lot
 * condition
 * yr_built
 
-![final_base_hist](images\final_base_hist.png)
+![final_base_hist](images/final_base_hist.png)
 
 ## Regression Analysis
 
 Return to log function of price:
 
-![base_log_price_hist](images\base_log_price_hist.png)
+![base_log_price_hist](images/base_log_price_hist.png)
 
 Perform a Train-Test-Split at 70/30 split to provide a Mean Square Error for both the training model and the test model.
 
